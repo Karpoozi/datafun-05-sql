@@ -15,4 +15,13 @@
    git commit -m "initial commit"
    git push -u origin main
    ```
+7. In VS code open a terminal and activate the virtual enviroment
+   ```
+   .venv\Scripts\Activate
+   ```
+8. Install packages into active environment
+   ```
+   py -m pip install pandas pyarrow
+   ```
+## Remember to edit your README.md file to record your commands, process, and notes.
    
