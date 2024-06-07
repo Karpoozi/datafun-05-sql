@@ -190,3 +190,74 @@ sqlite3.OperationalError: no such column: last
 2024-06-07 01:05:28,602 - INFO - Query executed successfully
 2024-06-07 01:05:28,602 - INFO - All SQL operations completed successfully
 2024-06-07 01:05:28,603 - INFO - Program ended
+2024-06-07 01:58:25,624 - INFO - Program started
+2024-06-07 02:06:20,472 - INFO - Program started
+2024-06-07 02:06:20,504 - INFO - Schema created successfully.
+2024-06-07 02:06:20,538 - INFO - Data inserted sucessfully.
+2024-06-07 02:07:24,273 - INFO - Program started
+2024-06-07 02:07:24,306 - INFO - Schema created successfully.
+2024-06-07 02:07:24,343 - INFO - Data inserted sucessfully.
+2024-06-07 02:07:24,343 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 67, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: near "insert": syntax error
+2024-06-07 02:12:04,028 - INFO - Program started
+2024-06-07 02:12:04,061 - INFO - Schema created successfully.
+2024-06-07 02:12:04,094 - INFO - Data inserted sucessfully.
+2024-06-07 02:12:04,095 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 67, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: near "insert": syntax error
+2024-06-07 02:12:04,095 - INFO - Records updated successfully.
+2024-06-07 02:12:04,113 - INFO - Records deleted successfully.
+2024-06-07 02:12:04,125 - INFO - Query executed successfully
+2024-06-07 02:12:04,126 - INFO - All SQL operations completed successfully
+2024-06-07 02:12:04,126 - INFO - Program ended
+2024-06-07 02:20:03,058 - INFO - Program started
+2024-06-07 02:20:03,084 - INFO - Schema created successfully.
+2024-06-07 02:20:03,123 - INFO - Data inserted sucessfully.
+2024-06-07 02:20:03,137 - INFO - Data inserted successfully.
+2024-06-07 02:20:03,142 - INFO - Records updated successfully.
+2024-06-07 02:20:03,148 - INFO - Records deleted successfully.
+2024-06-07 02:20:03,161 - INFO - Query executed successfully
+2024-06-07 02:20:03,161 - INFO - All SQL operations completed successfully
+2024-06-07 02:20:03,161 - INFO - Program ended
+2024-06-07 02:24:42,565 - INFO - Program started
+2024-06-07 02:24:42,592 - INFO - Schema created successfully.
+2024-06-07 02:24:42,629 - INFO - Data inserted sucessfully.
+2024-06-07 02:24:42,639 - INFO - Data inserted successfully.
+2024-06-07 02:24:42,651 - INFO - Records updated successfully.
+2024-06-07 02:24:42,657 - INFO - Records deleted successfully.
+2024-06-07 02:24:42,679 - INFO - Query executed successfully
+2024-06-07 02:24:42,679 - INFO - All SQL operations completed successfully
+2024-06-07 02:24:42,680 - INFO - Program ended
+2024-06-07 02:34:26,343 - INFO - Program started
+2024-06-07 02:34:26,360 - INFO - Schema created successfully.
+2024-06-07 02:34:26,400 - INFO - Data inserted sucessfully.
+2024-06-07 02:34:26,411 - INFO - Data inserted successfully.
+2024-06-07 02:34:26,421 - INFO - Records updated successfully.
+2024-06-07 02:34:26,430 - INFO - Records deleted successfully.
+2024-06-07 02:34:26,453 - INFO - Query executed successfully
+2024-06-07 02:34:26,454 - INFO - All SQL operations completed successfully
+2024-06-07 02:34:26,454 - INFO - Program ended
+2024-06-07 02:36:16,573 - INFO - Program started
+2024-06-07 02:37:14,404 - INFO - Program started
+2024-06-07 02:37:14,426 - INFO - Schema created successfully.
+2024-06-07 02:37:14,486 - INFO - Data inserted sucessfully.
+2024-06-07 02:37:14,497 - INFO - Data inserted successfully.
+2024-06-07 02:37:14,517 - INFO - Records updated successfully.
+2024-06-07 02:37:14,528 - INFO - Records deleted successfully.
+2024-06-07 02:37:14,551 - INFO - Query executed successfully
+2024-06-07 02:37:14,552 - INFO - All SQL operations completed successfully
+2024-06-07 02:37:14,552 - INFO - Program ended
+2024-06-07 02:44:51,884 - INFO - Program started
+2024-06-07 02:44:51,917 - INFO - Schema created successfully.
+2024-06-07 02:44:51,955 - INFO - Data inserted sucessfully.
+2024-06-07 02:44:51,967 - INFO - Data inserted successfully.
+2024-06-07 02:44:51,979 - INFO - Records updated successfully.
+2024-06-07 02:44:51,983 - INFO - Records deleted successfully.
+2024-06-07 02:44:51,992 - INFO - Query executed successfully
+2024-06-07 02:44:51,992 - INFO - All SQL operations completed successfully
+2024-06-07 02:44:51,997 - INFO - Program ended

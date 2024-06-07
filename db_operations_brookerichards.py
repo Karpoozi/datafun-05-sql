@@ -17,20 +17,23 @@ import logging
 logging.basicConfig(filename='log.txt', level=logging.DEBUG, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Program started") # log the start of the program
 
+
 # define the directory path where the script is located
 script_dir = pathlib.Path(__file__).parent
+
 
 # define the database file path
 db_file = "project.db"
 
+
 # combine the directory path and file name to get the database file path
 db_file_path = script_dir / db_file
 
+# create database schema
 def create_schema():
-    """Create database schema"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            schema_file = script_dir / "create_tables.sql"
+            schema_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\create_tables.sql"
             with open(schema_file, "r") as file:
                 schema_script = file.read()
             conn.executescript(schema_script)
@@ -40,8 +43,9 @@ def create_schema():
         logging.exception("Error creating schema")
         print("Error creating schema:", e)
 
+
+# insert records from CSV files
 def insert_data_from_csv():
-    """Insert records from CSV files into database"""
     try:
         author_data_path = script_dir / "data" / "authors.csv"
         book_data_path = script_dir / "data" / "books.csv"
@@ -56,25 +60,27 @@ def insert_data_from_csv():
         logging.exception("Error inserting data from CSV")  # log the exception
         print("Error inserting data from CSV:", e)
 
+
+# function to read and execute SQL statements to insert data
 def insert_records():
-    """Function to read and execute SQL statements to insert data"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "insert_records.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\insert_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
-            logging.info("Data inserted sucessfully.")
+            logging.info("Data inserted successfully.")
             print("Data inserted successfully.")
     except sqlite3.Error as e:
         logging.exception("Error inserting data from SQL")
         print("Error inserting data from SQL:", e)
 
+
+# function to update one or more records in the authors table
 def update_records():
-    """Function to update one or more records in the authors table"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "update_records.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\update_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -84,11 +90,12 @@ def update_records():
         logging.exception("Error updating records")
         print("Error updating records:", e)
 
+
+# function to delete records from a table
 def delete_records():
-    """Function to delete records from a table"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "delete_records.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\delete_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -98,11 +105,12 @@ def delete_records():
         logging.exception("Error deleting records")
         print("Error deleting records:", e)
 
+
+# function to perform aggregation functions on the books table
 def query_aggregation():
-    """Function to perform aggregation functions on the books table"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_aggregation.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\query_aggregation.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -114,11 +122,12 @@ def query_aggregation():
         logging.exception("Error querying aggregation for books:")
         print("Error querying aggregation for books:", e)
 
+
+# function to filter book data based on conditions
 def query_filter():
-    """Function to filter book data based on conditions"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_filter.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\query_filter.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -129,11 +138,12 @@ def query_filter():
         logging.exception("Error filtering book data", e)
         print("Error filtering book data:", e)
 
+
+# function to sort book data based on publication date
 def query_sorting():
-    """Function to sort book data based on publication date"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_sorting.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\query_sorting.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -144,11 +154,12 @@ def query_sorting():
         logging.exception("Error sorting book data:", e)
         print("Error sorting book data:", e)
 
+
+# function to execute SQL query with GROUP BY clause and display the count of each grouping
 def query_group_by():
-    """Function to execute SQL query with GROUP BY clause and display the count of each grouping."""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_group_by.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\query_group_by.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.cursor()
@@ -162,11 +173,12 @@ def query_group_by():
         logging.exception("Error executing query:", e)
         print("Error executing query:", e)
 
+
+# function to read and execute SQL statements to perform INNER JOIN and display the results
 def query_join():
-    """Function to read and execute SQL statements to perform INNER JOIN and display the results"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_join.sql"
+            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\sql\\query_join.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -181,9 +193,8 @@ def query_join():
         print("Error executing query:", e)
 
 
-
+#  main function to execute all SQL operations
 def main():
-    """Main function to execute all SQL operations"""
     create_schema()
     insert_data_from_csv()
     insert_records()
@@ -196,10 +207,13 @@ def main():
     query_join()    
     logging.info("All SQL operations completed successfully")
     
+    
+# conditionally execute the main() function if this is the script being run
 if __name__ == "__main__":
     main()
 
 
+# log the end of the main method
 logging.info("Program ended")  # log the end of the main method
 
 

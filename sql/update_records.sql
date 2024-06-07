@@ -1,7 +1,7 @@
--- update records in the authors data set to X where last name is Dahl
+-- update records in the authors data set to X where last name is Collins
 update authors
-SET last_name = 'X'
-where last_name = 'Dahl';
+SET last_name = 'Award Winning'
+where last_name = 'Collins';
 
 -- update records in the books data set to reflect Books Made into Movies in the 2000s
 UPDATE books
