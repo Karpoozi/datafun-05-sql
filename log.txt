@@ -59,3 +59,112 @@
 2024-06-06 23:37:52,719 - INFO - Records deleted successfully.
 2024-06-06 23:37:52,729 - INFO - All SQL operations completed successfully
 2024-06-06 23:37:52,729 - INFO - Program ended
+2024-06-07 00:34:38,018 - INFO - Program started
+2024-06-07 00:34:38,050 - INFO - Schema created successfully.
+2024-06-07 00:34:38,112 - INFO - Data inserted sucessfully.
+2024-06-07 00:36:10,307 - INFO - Program started
+2024-06-07 00:36:10,339 - INFO - Schema created successfully.
+2024-06-07 00:36:10,388 - INFO - Data inserted sucessfully.
+2024-06-07 00:36:10,397 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 66, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: table authors has no column named first_name
+2024-06-07 00:36:10,415 - INFO - Records updated successfully.
+2024-06-07 00:36:10,425 - INFO - Records deleted successfully.
+2024-06-07 00:36:10,495 - INFO - All SQL operations completed successfully
+2024-06-07 00:36:10,495 - INFO - Program ended
+2024-06-07 00:39:07,673 - INFO - Program started
+2024-06-07 00:39:07,696 - INFO - Schema created successfully.
+2024-06-07 00:39:07,735 - INFO - Data inserted sucessfully.
+2024-06-07 00:39:07,749 - INFO - Data inserted sucessfully.
+2024-06-07 00:39:07,754 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 00:39:07,757 - INFO - Records deleted successfully.
+2024-06-07 00:40:35,219 - INFO - Program started
+2024-06-07 00:40:35,241 - INFO - Schema created successfully.
+2024-06-07 00:40:35,278 - INFO - Data inserted sucessfully.
+2024-06-07 00:40:35,310 - INFO - Data inserted sucessfully.
+2024-06-07 00:40:35,310 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 00:40:35,327 - INFO - Records deleted successfully.
+2024-06-07 00:41:23,351 - INFO - Program started
+2024-06-07 00:41:23,370 - INFO - Schema created successfully.
+2024-06-07 00:41:23,417 - INFO - Data inserted sucessfully.
+2024-06-07 00:41:23,418 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 66, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: table authors has no column named first_name
+2024-06-07 00:41:23,431 - INFO - Records updated successfully.
+2024-06-07 00:41:23,438 - INFO - Records deleted successfully.
+2024-06-07 00:41:23,452 - INFO - All SQL operations completed successfully
+2024-06-07 00:41:23,452 - INFO - Program ended
+2024-06-07 00:45:24,737 - INFO - Program started
+2024-06-07 00:45:24,753 - INFO - Schema created successfully.
+2024-06-07 00:45:24,795 - INFO - Data inserted sucessfully.
+2024-06-07 00:45:24,806 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 66, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: table authors has no column named first_name
+2024-06-07 00:45:24,821 - INFO - Records updated successfully.
+2024-06-07 00:45:24,827 - INFO - Records deleted successfully.
+2024-06-07 00:45:24,849 - INFO - All SQL operations completed successfully
+2024-06-07 00:45:24,850 - INFO - Program ended
+2024-06-07 00:48:06,972 - INFO - Program started
+2024-06-07 00:48:06,996 - INFO - Schema created successfully.
+2024-06-07 00:48:07,030 - INFO - Data inserted sucessfully.
+2024-06-07 00:48:07,030 - ERROR - Error inserting data from SQL
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 66, in insert_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: table authors has no column named first_name
+2024-06-07 00:48:07,049 - INFO - Records updated successfully.
+2024-06-07 00:48:07,058 - INFO - Records deleted successfully.
+2024-06-07 00:48:07,083 - INFO - All SQL operations completed successfully
+2024-06-07 00:48:07,083 - INFO - Program ended
+2024-06-07 00:50:06,311 - INFO - Program started
+2024-06-07 00:50:06,327 - INFO - Schema created successfully.
+2024-06-07 00:50:06,375 - INFO - Data inserted sucessfully.
+2024-06-07 00:50:06,375 - INFO - Data inserted sucessfully.
+2024-06-07 00:50:06,375 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 00:50:06,390 - INFO - Records deleted successfully.
+2024-06-07 00:50:06,406 - INFO - Query executed successfully
+2024-06-07 00:50:06,406 - INFO - All SQL operations completed successfully
+2024-06-07 00:50:06,406 - INFO - Program ended
+2024-06-07 00:52:33,672 - INFO - Program started
+2024-06-07 00:52:33,685 - INFO - Schema created successfully.
+2024-06-07 00:52:33,742 - INFO - Data inserted sucessfully.
+2024-06-07 00:52:33,761 - INFO - Data inserted sucessfully.
+2024-06-07 00:52:33,764 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 00:52:33,771 - INFO - Records deleted successfully.
+2024-06-07 00:52:33,795 - INFO - All SQL operations completed successfully
+2024-06-07 00:52:33,795 - INFO - Program ended
+2024-06-07 00:53:32,486 - INFO - Program started
+2024-06-07 00:53:32,508 - INFO - Schema created successfully.
+2024-06-07 00:53:32,549 - INFO - Data inserted sucessfully.
+2024-06-07 00:53:32,549 - INFO - Data inserted sucessfully.
+2024-06-07 00:53:32,562 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 00:53:32,572 - INFO - Records deleted successfully.
+2024-06-07 00:53:32,585 - INFO - Query executed successfully
+2024-06-07 00:53:32,585 - INFO - All SQL operations completed successfully
+2024-06-07 00:53:32,585 - INFO - Program ended

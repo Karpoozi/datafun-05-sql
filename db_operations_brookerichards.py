@@ -60,7 +60,7 @@ def insert_records():
     """Function to read and execute SQL statements to insert data"""
     try:
         with sqlite3.connect(db_file_path) as conn:
-            sql_file = script_dir / "query_records.sql"
+            sql_file = script_dir / "insert_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -173,11 +173,13 @@ def query_join():
             rows = cursor.fetchall()
             # display the joint data
             for row in rows:
-                print(f"Title: {row[0]}, Author's Last Name: {row[3]}")
+                print(f"Title: {row[0]}, Author's Last Name: {row[1]}")
+            logging.info("Query executed successfully")
             print("Query executed successfully.")
     except sqlite3.Error as e:
         logging.exception("Error executing query:", e)
         print("Error executing query:", e)
+
 
 
 def main():
