@@ -196,6 +196,7 @@ def main():
     query_group_by()
     query_join()    
     logging.info("All SQL operations completed successfully")
+```
 
 # Conditional Script Execution
 Conditionally execute the main() function if this is the script being run
@@ -203,6 +204,7 @@ Conditionally execute the main() function if this is the script being run
 if __name__ == "__main__":
     main()
 ```
+
 ## Git add / commit / push
 
 
