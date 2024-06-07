@@ -29,12 +29,13 @@ db_file_path = script_dir / db_file
 def create_schema():
     """Create database schema"""
     try:
-        with sqlite3.connect(db_file) as conn:
-            schema_file = pathlib.Path("create_tables.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            schema_file = script_dir / "create_tables.sql"
             with open(schema_file, "r") as file:
                 schema_script = file.read()
             conn.executescript(schema_script)
             logging.info("Schema created successfully.")
+            print("Schema created successfully.")
     except sqlite3.Error as e:
         logging.exception("Error creating schema")
         print("Error creating schema:", e)
@@ -47,8 +48,6 @@ def insert_data_from_csv():
         authors_df = pd.read_csv(author_data_path)
         books_df = pd.read_csv(book_data_path)
         with sqlite3.connect(db_file_path) as conn:
-            # Use the pandas DataFrame to_sql() method to insert data
-            # Pass in the table name and the connection
             authors_df.to_sql("authors", conn, if_exists="replace", index=False)
             books_df.to_sql("books", conn, if_exists="replace", index=False)
             logging.info("Data inserted sucessfully.")
@@ -60,8 +59,8 @@ def insert_data_from_csv():
 def insert_records():
     """Function to read and execute SQL statements to insert data"""
     try:
-        with sqlite3.connect(db_file) as conn:
-            sql_file = "C:\\Users\\brichards\\Projects\\datafun-05-sql\\query_records.sql"
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -74,9 +73,8 @@ def insert_records():
 def update_records():
     """Function to update one or more records in the authors table"""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("update_records.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "update_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -89,9 +87,8 @@ def update_records():
 def delete_records():
     """Function to delete records from a table"""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("delete_records.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "delete_records.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -104,9 +101,8 @@ def delete_records():
 def query_aggregation():
     """Function to perform aggregation functions on the books table"""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("query_aggregation.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_aggregation.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -121,9 +117,8 @@ def query_aggregation():
 def query_filter():
     """Function to filter book data based on conditions"""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("query_filter.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_filter.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -131,14 +126,14 @@ def query_filter():
             for book in books:
                 print(book[1], book[2])  # print title and year_published
     except sqlite3.Error as e:
+        logging.exception("Error filtering book data", e)
         print("Error filtering book data:", e)
 
 def query_sorting():
     """Function to sort book data based on publication date"""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("query_sorting.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_sorting.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -146,14 +141,14 @@ def query_sorting():
             for book in books:
                 print(book[0], book[1])  # print year_published and title
     except sqlite3.Error as e:
+        logging.exception("Error sorting book data:", e)
         print("Error sorting book data:", e)
 
 def query_group_by():
     """Function to execute SQL query with GROUP BY clause and display the count of each grouping."""
     try:
-        db_file = pathlib.Path("project.db")
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("query_group_by.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_group_by.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.cursor()
@@ -164,13 +159,14 @@ def query_group_by():
                 print(f"{row[0]}\t\t{row[1]}")
             print("Query executed successfully.")
     except sqlite3.Error as e:
+        logging.exception("Error executing query:", e)
         print("Error executing query:", e)
 
 def query_join():
     """Function to read and execute SQL statements to perform INNER JOIN and display the results"""
     try:
-        with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("query_join.sql")
+        with sqlite3.connect(db_file_path) as conn:
+            sql_file = script_dir / "query_join.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
@@ -180,10 +176,12 @@ def query_join():
                 print(f"Title: {row[0]}, Author's Last Name: {row[3]}")
             print("Query executed successfully.")
     except sqlite3.Error as e:
+        logging.exception("Error executing query:", e)
         print("Error executing query:", e)
 
 
 def main():
+    """Main function to execute all SQL operations"""
     create_schema()
     insert_data_from_csv()
     insert_records()
@@ -194,6 +192,7 @@ def main():
     query_sorting()
     query_group_by()
     query_join()    
+    logging.info("All SQL operations completed successfully")
     
 if __name__ == "__main__":
     main()
