@@ -3,7 +3,7 @@ update authors
 SET last_name = 'Award Winning'
 where last_name = 'Collins';
 
--- update records in the books data set to reflect Books Made into Movies in the 2000s
+-- update records in the books to silly name
 UPDATE books
-SET title = 'Books Made into Movies in the 2000s'
-WHERE year_published IN ('1925', '1813', '1954', '1997');
+SET title = 'Books I Fell Asleep Reading'
+WHERE LENGTH(title) >= 1;

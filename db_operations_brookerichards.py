@@ -15,7 +15,10 @@ import logging
 
 # configure logging to write to a file
 logging.basicConfig(filename='log.txt', level=logging.DEBUG, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
-logging.info("Program started") # log the start of the program
+
+
+# log the start of the program
+logging.info("Program started")
 
 
 # define the directory path where the script is located
@@ -28,6 +31,7 @@ db_file = "project.db"
 
 # combine the directory path and file name to get the database file path
 db_file_path = script_dir / db_file
+
 
 # create database schema
 def create_schema():
@@ -132,8 +136,9 @@ def query_filter():
                 sql_script = file.read()
             cursor = conn.execute(sql_script)
             books = cursor.fetchall()
+             # print title and year_published
             for book in books:
-                print(book[1], book[2])  # print title and year_published
+                print(book[1], book[2])
     except sqlite3.Error as e:
         logging.exception("Error filtering book data", e)
         print("Error filtering book data:", e)
@@ -207,13 +212,13 @@ def main():
     query_join()    
     logging.info("All SQL operations completed successfully")
     
-    
+
 # conditionally execute the main() function if this is the script being run
 if __name__ == "__main__":
     main()
 
 
 # log the end of the main method
-logging.info("Program ended")  # log the end of the main method
+logging.info("Program ended")
 
 

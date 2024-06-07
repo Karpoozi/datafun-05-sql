@@ -261,3 +261,12 @@ sqlite3.OperationalError: near "insert": syntax error
 2024-06-07 02:44:51,992 - INFO - Query executed successfully
 2024-06-07 02:44:51,992 - INFO - All SQL operations completed successfully
 2024-06-07 02:44:51,997 - INFO - Program ended
+2024-06-07 02:59:32,926 - INFO - Program started
+2024-06-07 02:59:32,957 - INFO - Schema created successfully.
+2024-06-07 02:59:32,992 - INFO - Data inserted sucessfully.
+2024-06-07 02:59:33,007 - INFO - Data inserted successfully.
+2024-06-07 02:59:33,023 - INFO - Records updated successfully.
+2024-06-07 02:59:33,037 - INFO - Records deleted successfully.
+2024-06-07 02:59:33,056 - INFO - Query executed successfully
+2024-06-07 02:59:33,056 - INFO - All SQL operations completed successfully
+2024-06-07 02:59:33,056 - INFO - Program ended
