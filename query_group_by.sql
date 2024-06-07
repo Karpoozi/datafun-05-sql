@@ -1,4 +1,5 @@
-SELECT year_published, COUNT(*) AS book_count
+-- group books by the decade of publication and count the number of books in each decade
+SELECT FLOOR(year_published / 10) * 10 AS decade,
+       COUNT(*) AS books_in_decade
 FROM books
-GROUP BY year_published
-ORDER BY year_published DESC;
+GROUP BY decade;

@@ -1,3 +1,4 @@
-SELECT books.book_id, books.title, books.year_published, authors.first, authors.last
-FROM books
-INNER JOIN authors ON books.author_id = authors.author_id;
+-- retrieve titles and authors' last names using INNER JOIN
+SELECT b.title, a.last_name
+FROM books b
+INNER JOIN authors a ON b.author_id = a.author_id;

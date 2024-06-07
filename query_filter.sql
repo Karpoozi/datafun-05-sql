@@ -1,3 +1,4 @@
+-- filter books published after 1950
 SELECT *
-FROM authors
-WHERE LAST = 'Tolkien';
+FROM books
+WHERE year_published > 1950;

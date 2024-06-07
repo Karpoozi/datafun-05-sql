@@ -1,3 +1,4 @@
+-- sort books by year_published in descending order
 SELECT *
 FROM books
-ORDER BY year_published ASC;
+ORDER BY year_published DESC;
