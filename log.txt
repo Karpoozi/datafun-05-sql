@@ -1,0 +1,45 @@
+2024-06-06 22:54:13,248 - INFO - Program started
+2024-06-06 22:55:09,531 - INFO - Program started
+2024-06-06 22:55:09,628 - INFO - Schema created successfully.
+2024-06-06 22:55:09,692 - INFO - Data inserted sucessfully.
+2024-06-06 22:56:40,492 - INFO - Program started
+2024-06-06 22:56:40,555 - INFO - Schema created successfully.
+2024-06-06 22:56:40,610 - INFO - Data inserted sucessfully.
+2024-06-06 22:57:04,139 - INFO - Program started
+2024-06-06 22:57:04,215 - INFO - Schema created successfully.
+2024-06-06 22:57:04,263 - INFO - Data inserted sucessfully.
+2024-06-06 23:01:36,546 - INFO - Program started
+2024-06-06 23:01:36,618 - INFO - Schema created successfully.
+2024-06-06 23:01:36,658 - INFO - Data inserted sucessfully.
+2024-06-06 23:03:11,129 - INFO - Program started
+2024-06-06 23:03:11,219 - INFO - Schema created successfully.
+2024-06-06 23:03:11,261 - INFO - Data inserted sucessfully.
+2024-06-06 23:06:05,697 - INFO - Program started
+2024-06-06 23:06:05,718 - INFO - Schema created successfully.
+2024-06-06 23:06:05,746 - INFO - Data inserted sucessfully.
+2024-06-06 23:06:05,746 - INFO - Data inserted sucessfully.
+2024-06-06 23:11:18,789 - INFO - Program started
+2024-06-06 23:11:18,810 - INFO - Schema created successfully.
+2024-06-06 23:11:18,841 - INFO - Data inserted sucessfully.
+2024-06-06 23:11:18,842 - INFO - Data inserted sucessfully.
+2024-06-06 23:11:18,842 - INFO - Records updated successfully.
+2024-06-06 23:11:18,842 - INFO - Records deleted successfully.
+2024-06-06 23:11:56,097 - INFO - Program started
+2024-06-06 23:11:56,114 - INFO - Schema created successfully.
+2024-06-06 23:11:56,164 - INFO - Data inserted sucessfully.
+2024-06-06 23:11:56,164 - INFO - Data inserted sucessfully.
+2024-06-06 23:11:56,164 - INFO - Records updated successfully.
+2024-06-06 23:11:56,164 - INFO - Records deleted successfully.
+2024-06-06 23:17:37,777 - INFO - Program started
+2024-06-06 23:17:37,801 - INFO - Schema created successfully.
+2024-06-06 23:17:37,833 - INFO - Data inserted sucessfully.
+2024-06-06 23:17:37,833 - INFO - Data inserted sucessfully.
+2024-06-06 23:17:37,861 - INFO - Records updated successfully.
+2024-06-06 23:17:37,869 - INFO - Records deleted successfully.
+2024-06-06 23:17:58,948 - INFO - Program started
+2024-06-06 23:17:58,979 - INFO - Schema created successfully.
+2024-06-06 23:17:59,026 - INFO - Data inserted sucessfully.
+2024-06-06 23:17:59,026 - INFO - Data inserted sucessfully.
+2024-06-06 23:17:59,042 - INFO - Records updated successfully.
+2024-06-06 23:17:59,058 - INFO - Records deleted successfully.
+2024-06-06 23:17:59,074 - INFO - Program ended
