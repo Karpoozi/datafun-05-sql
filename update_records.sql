@@ -1,7 +1,7 @@
--- update records in the authors data set to blank where last name is Rowling
+-- update records in the authors data set to X where last name is Dahl
 update authors
-SET last = ''
-where last = 'Rowling';
+SET last_name = 'X'
+where last_name = 'Dahl';
 
 -- update records in the books data set to reflect Books Made into Movies in the 2000s
 UPDATE books

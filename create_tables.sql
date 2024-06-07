@@ -11,8 +11,8 @@ DROP TABLE IF EXISTS authors;
 
 CREATE TABLE authors (
     author_id TEXT PRIMARY KEY,
-    first TEXT,
-    last TEXT
+    first_name TEXT,
+    last_name TEXT
 );
 
 -- Create the books table

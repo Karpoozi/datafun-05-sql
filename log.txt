@@ -168,3 +168,25 @@ sqlite3.OperationalError: no such column: last
 2024-06-07 00:53:32,585 - INFO - Query executed successfully
 2024-06-07 00:53:32,585 - INFO - All SQL operations completed successfully
 2024-06-07 00:53:32,585 - INFO - Program ended
+2024-06-07 01:04:05,900 - INFO - Program started
+2024-06-07 01:04:05,917 - INFO - Schema created successfully.
+2024-06-07 01:04:05,962 - INFO - Data inserted sucessfully.
+2024-06-07 01:04:05,974 - INFO - Data inserted sucessfully.
+2024-06-07 01:04:05,981 - ERROR - Error updating records
+Traceback (most recent call last):
+  File "c:\Users\brichards\Projects\datafun-05-sql\db_operations_brookerichards.py", line 80, in update_records
+    conn.executescript(sql_script)
+sqlite3.OperationalError: no such column: last
+2024-06-07 01:04:05,991 - INFO - Records deleted successfully.
+2024-06-07 01:04:06,012 - INFO - Query executed successfully
+2024-06-07 01:04:06,013 - INFO - All SQL operations completed successfully
+2024-06-07 01:04:06,013 - INFO - Program ended
+2024-06-07 01:05:28,502 - INFO - Program started
+2024-06-07 01:05:28,518 - INFO - Schema created successfully.
+2024-06-07 01:05:28,564 - INFO - Data inserted sucessfully.
+2024-06-07 01:05:28,572 - INFO - Data inserted sucessfully.
+2024-06-07 01:05:28,583 - INFO - Records updated successfully.
+2024-06-07 01:05:28,588 - INFO - Records deleted successfully.
+2024-06-07 01:05:28,602 - INFO - Query executed successfully
+2024-06-07 01:05:28,602 - INFO - All SQL operations completed successfully
+2024-06-07 01:05:28,603 - INFO - Program ended
